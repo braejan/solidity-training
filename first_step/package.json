@@ -1,11 +1,12 @@
 {
-  "name": "hardhat-project",
+  "name": "first-contract",
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "hardhat compile",
-    "test:light": "hardhat test",
-    "test": "hardhat coverage"
+    "build": "hardhat --emoji compile",
+    "test": "hardhat --emoji test",
+    "local-testnet": "hardhat --emoji node",
+    "deploy:local": "hardhat run --network localhost scripts/deployFirstContract.js"
   },
   "keywords": [],
   "author": {
